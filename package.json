@@ -1,7 +1,39 @@
 {
-    "name": "ra-util",
-    "version": "1.0.0",
+    "author": "Brian Taylor <brian@resolvingarchitecture.io>",
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "dependencies": {
+        "axios": "^0.21.0",
+        "jwt-decode": "2.2.0",
+        "typescript": "^4.0.5"
+    },
+    "deprecated": false,
     "description": "RA Utilities",
     "main": "dist/index.js",
-    "types": "dist/index.d.ts"
+    "name": "@resolvingarchitecture/ra-util",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "repository": {
+        "url": "https://github.com/resolvingarchitecture/ra-util-ts",
+        "type": "git"
+    },
+    "scripts": {
+        "build": "tsc",
+        "test": "mocha -r jsdom-global/register -r ts-node/register lib/**/*.spec.ts",
+        "link": "tsc && copy /Y package.json dist && copy /Y readme.md dist && cd dist && npm link",
+        "dist": "tsc && copy /Y package.json dist && copy /Y readme.md dist && cd dist && npm publish"
+    },
+    "types": "dist/index.d.ts",
+    "version": "1.0.1"
 }
