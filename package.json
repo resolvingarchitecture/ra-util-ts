@@ -1,15 +1,7 @@
 {
     "name": "ra-util",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "RA Utilities",
     "main": "dist/index.js",
-    "types": "dist/index.d.ts",
-    "dependencies": {},
-    "devDependencies": {
-        "ts-jest": "^26.4.4"
-    },
-    "scripts": {
-        "test": "jest",
-        "coverage": "jest --coverage"
-    }
+    "types": "dist/index.d.ts"
 }

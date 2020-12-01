@@ -1,1 +1,1 @@
-export { RandomUtil } from './ra-random-util'
+export { RandomUtil } from './ra-util';
